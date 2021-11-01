@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canteen</title>
+    <link rel="stylesheet" href="./Css/Signup.styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <h1 class="Heading">Welcome To Canteen Registration</h1>
+        <form name="RegistrationForm">
+          <input
+            name="Firstname"
+            type="text"
+            placeholder="First name"
+            required
+          /><br />
+          <input name="Lastname" type="text" placeholder="Last name" /><br />
+          <input name="Email" type="email" placeholder="Email " /><br />
+          <input
+            name="createPassword"
+            type="password"
+            placeholder="Create Password "
+          /><br />
+          <input
+            name="confirmPassword"
+            type="password"
+            placeholder="Confirm Password"
+          /><br />
+          <input
+            name="Mob"
+            type="number"
+            placeholder="+91"
+            maxlength="10"
+          /><br />
+          <button
+            type="submit"
+            value="submit"
+            onclick="handleRegistrationSubmit()"
+          >
+            Submit
+          </button>
+          <a href="Home.html">Already have an account?</a>
+        </form>
+      </div>
+    </section>
+    <script src="./Scripts/Main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/Landing.styles.css" />
+    <title>Welcome To The Kitchen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="menuHeading">
+        Welcome To Our Kitchen
+        <button class="logoutButton" onclick="handleCheckoutAndLogout()">
+          Logout
+        </button>
+      </h1>
+      <hr />
+      <div class="menu">
+        <h3 class="menuGroupHeading">Our Snaks</h3>
+        <section class="menuGroup">
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://i.ytimg.com/vi/hrozhYx_mQE/maxresdefault.jpg"
+              alt="Frech Fries"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">French Fries</span>
+                <span class="menuItemPrice">₹50</span>
+              </h3>
+              <p class="menuItemDetails">
+                French fries, chips, finger chips, French-fried potatoes, or
+                simply fries are batonnet or allumette-cut deep-fried potatoes,
+                originating from either Belgium or France. They are prepared by
+                cutting the potato into even strips, then drying and frying it,
+                usually in a deep fryer.
+              </p>
+              <button
+                name="French Fries"
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                value="50"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://static.toiimg.com/thumb/80920657.cms?imgsize=251331&width=800&height=800"
+              alt="Vada pav"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">Vada pav</span>
+                <span class="menuItemPrice">₹20</span>
+              </h3>
+              <p class="menuItemDetails">
+                Vada pav, alternatively spelt wada pao, is a vegetarian fast
+                food dish native to the state of Maharashtra. The dish consists
+                of a deep fried potato dumpling placed inside a bread bun sliced
+                almost in half through the middle. It is generally accompanied
+                with one or more chutneys and a green chili pepper
+              </p>
+              <button
+                name="Vada pav"
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                value="20"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem"></article>
+        </section>
+
+        <h3 class="menuGroupHeading">Our Full Course</h3>
+        <section class="menuGroup">
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://i1.wp.com/s3.ap-south-1.amazonaws.com/images.salonyscookbook.com/pav-bhaji-recipe/pav-bhaji-recipe13.jpg?w=1200"
+              alt="Pav Bhaji"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">Pav Bhaji</span>
+                <span class="menuItemPrice">₹99</span>
+              </h3>
+              <p class="menuItemDetails">
+                Pav bhaji is a fast food dish from India consisting of a thick
+                vegetable curry served with a soft bread roll. Its origins are
+                in the state of Maharashtra.
+              </p>
+              <button
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                name="Pav Bhaji"
+                value="99"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxi-VJjKAT0XyFgCThb5gPmNxBj0T1akVA2w&usqp=CAU"
+              alt="Frech Fries"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">Shev Bhaji</span>
+                <span class="menuItemPrice">₹20</span>
+              </h3>
+              <p class="menuItemDetails">
+                Khandeshi shev bhaji is as the name suggests khandesh special
+                recipe. Red thick shev that s specially made for this bhaji is
+                added to spicy and pungent curry. It is served with bhakari
+              </p>
+              <button
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                name="Shev Bhaji"
+                value="20"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem"></article>
+        </section>
+
+        <h3 class="menuGroupHeading">Our Special Desert</h3>
+        <section class="menuGroup">
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://www.cookwithkushi.com/wp-content/uploads/2015/10/IMG_4261_1-1.jpg"
+              alt="Gulab jamun"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">Gulab jamun</span>
+                <span class="menuItemPrice">₹119</span>
+              </h3>
+              <p class="menuItemDetails">
+                Gulab jamun is a milk-solid-based sweet, originating in India
+                and a type of mithai popular in India, Nepal, Pakistan, the
+                Maldives, and Bangladesh, as well as Myanmar. It is also
+                declared as the national dessert of Pakistan officially by
+                Government of Pakistan.
+              </p>
+              <button
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                name="Gulab jamun"
+                value="119"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem">
+            <img
+              class="menuItemImage"
+              src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/shrikhand.jpg"
+              alt="shrikhand"
+            />
+            <div class="menuItemText">
+              <h3 class="menuItemHeading">
+                <span class="menuItemName">Shrikand</span>
+                <span class="menuItemPrice">₹50</span>
+              </h3>
+              <p class="menuItemDetails">
+                Is shrikhand same as yogurt? Image result for shrikhand
+                Shrikhand is a thick creamy and delicious Indian dessert made
+                with strained yogurt, powdered sugar, cardamoms and sometimes
+                saffron & nuts. Some would call it sweetened yogurt, but
+                shrikhand is much more than that. You strain curd aka Indian
+                yogurt to remove liquids and whisk until creamy.
+              </p>
+              <button
+                class="menuOrderButton"
+                onclick="addOrderAndCheckout(this)"
+                name="Shrikhand"
+                value="50"
+              >
+                Order Item
+              </button>
+            </div>
+          </article>
+          <article class="menuItem"></article>
+        </section>
+      </div>
+    </div>
+    <script src="./Scripts/Main.js"></script>
+  </body>
+</html>

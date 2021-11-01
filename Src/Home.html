@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Css/Login.styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <h1 class="Heading">Welcome To Canteen Login</h1>
+        <form name="Loginform">
+          <input name="Email" type="email" placeholder="Email" required />
+          <br />
+          <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <br />
+          <button type="submit" value="submit" onclick="handleLoginSubmit()">
+            Submit
+          </button>
+          <a href="Index.html">Create An Account?</a>
+        </form>
+      </div>
+    </section>
+    <script src="./Scripts/Main.js"></script>
+  </body>
+</html>
